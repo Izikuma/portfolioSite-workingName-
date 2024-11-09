@@ -24,25 +24,49 @@ header a {
     text-decoration: none;
     text-transform: uppercase;
     margin-top: 40px;
+    padding: 3px;
+}
+
+header a:hover {
+    background-color: rgb(77, 48, 204);
+    color: white;
 }
 
 
-header .logo a {
+header .logo.desktop a {
     background-color: rgba(255, 255, 255, 0);
     background-image: url("images/yeah.png");
     background-size: 300px;
     background-repeat: no-repeat;
+    background-position: 0 -22px;
     display: inline-block;
     position: relative;
     width: 300px;
     height: 140px;
-    text-indent: -99999999px;
+    text-indent: -99999px;
     top: -40px;
+}
+
+header .logo.mobile a {
+    background-color: rgba(255, 0, 0, 0);
+    background-image: url("images/yeahSmol.png");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    display: inline-block;
+    margin-right: 0px;
+    margin-left: 0px;
+    position: relative;
+    width: 100px;
+    height: 80px;
+    text-indent: -99999px;
+    top: -45px;
 }
 
 header .mobile {
     display: none;
 }
+
 
 nav ul {
     margin: 0;
@@ -60,7 +84,7 @@ nav li:first-child {
 }
 
 /* RESPONSIVE RULES */
-@media screen and (max-width: 631px) {
+@media screen and (max-width: 700px) {
     header .mobile {
         display: inline-block;
     }
@@ -68,6 +92,8 @@ nav li:first-child {
         display: none;
     }
 }
+
+
 
 /* FEATURES */
 
